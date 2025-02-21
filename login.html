@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPay BD - লগইন</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+        }
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>লগইন করুন</h2>
+        <form action="dashboard.html" method="POST">
+            <input type="text" class="input-field" placeholder="ইউজারনেম" required>
+            <input type="password" class="input-field" placeholder="পাসওয়ার্ড" required>
+            <button type="submit" class="btn">লগইন</button>
+        </form>
+        <a href="register.html" class="register-link">নতুন একাউন্ট খুলুন</a>
+    </div>
+</body>
+</html>
